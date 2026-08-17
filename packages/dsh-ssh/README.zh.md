@@ -8,8 +8,8 @@
 
 | 能力 | 说明 |
 | --- | --- |
-| 主机管理 | 增删改查、搜索、连接测试；配置存 `~/.dsh/dsh-ssh.json`；支持密钥 / 密码认证、passphrase 密钥、ProxyJump 跳板机（多级） |
-| 配置导入 | 一键解析标准 `~/.ssh/config`（Host/HostName/User/Port/IdentityFile/ProxyJump 等），已有别名自动跳过 |
+| 主机管理 | 增删改查、搜索、连接测试；配置存 `~/.dsh/dsh-ssh.json`；支持密钥 / 密码 / ssh-agent 认证（OpenSSH agent / Pageant）、passphrase 密钥、ProxyJump 跳板机（多级） |
+| 配置导入 | 一键解析标准 `~/.ssh/config`（Host/HostName/User/Port/IdentityFile/IdentityAgent/ProxyJump 等），已有别名自动跳过 |
 | 持久连接池 | 每台主机复用长连接（对应 ssh-skill 的守护进程），空闲 30 分钟自动断开，断线自动重连（最多 3 次） |
 | 命令执行 | exec 带超时（默认 60s），stdout/stderr 分离，输出截断保护（2MB） |
 | Web 终端 | xterm.js + WebSocket PTY 终端，自适应尺寸，实时输出 |
